@@ -13,4 +13,8 @@ if you want to build this repo from sources, then you need to pay attention
 [!] I using raylib from my local disk
 i bulit it from source code in https://github.com/raysan5/raylib/releases/tag/6.0
 
-If you want to just run the example, then i pin executable files!
+If you want to just run the example, then i pin executable files! (:
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file to details!. 
