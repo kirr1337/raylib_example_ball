@@ -4,14 +4,14 @@ int main(void) {
     /**
      * variables
      */
-    constexpr int windowWidth = 640;
-    constexpr int windowHeight = 400;
+    constexpr int windowWidth = 1200;
+    constexpr int windowHeight = 800;
 
-    float speed_x = 120.0f;
-    float speed_y = 120.0f;
-    const float circeRadius = 32.0f;
+    float speed_x = 500.0f;
+    float speed_y = 500.0f;
+    const float circleRadius = 32.0f;
 
-    Vector2 circle = {0, (float)windowWidth / 2}; // creating a 2d vector, so that later we can draw a circle
+    Vector2 circle = {200, (float)windowWidth / 2}; // creating a 2d vector, so that later we can draw a circle
 
     InitWindow(windowWidth, windowHeight, "hello raylib");
 
@@ -32,7 +32,7 @@ int main(void) {
         BeginDrawing();
         ClearBackground(RAYWHITE);
 
-        DrawCircleV(circle, circeRadius, RED);
+        DrawCircleV(circle, circleRadius, RED);
         DrawText(TextFormat("X: %f", circle.x), windowHeight + 120, 30, 16, GRAY);
         DrawText(TextFormat("Y: %f", circle.y), windowHeight + 120, 50, 16, GRAY);
         DrawText(TextFormat("FPS: %i", GetFPS()), windowHeight + 120, 75, 16, GRAY);
